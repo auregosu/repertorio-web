@@ -1,0 +1,67 @@
+:root {
+	color-scheme: dark;
+	--bg: #121212;
+	--surface: #1e1e1e;
+	--border: #333;
+	--text: #e8e8e8;
+	--accent: #c9a24d;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: system-ui, sans-serif;
+}
+
+a {
+	color: var(--accent);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem 2rem;
+	background: var(--surface);
+	border-bottom: 1px solid var(--border);
+}
+
+/* margin-right: auto pushes everything after the brand to the right */
+.brand {
+	margin-right: auto;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+input,
+button {
+	padding: 0.4rem 0.8rem;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	font: inherit;
+}
+
+input {
+	background: var(--bg);
+	color: var(--text);
+}
+
+button {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: var(--bg);
+	cursor: pointer;
+}
+
+main {
+	max-width: 50rem;
+	margin: 2rem auto;
+	padding: 0 2rem;
+}
